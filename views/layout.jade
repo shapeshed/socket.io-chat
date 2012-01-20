@@ -2,7 +2,9 @@
 html
   head
     title= title
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Terminal+Dosis:400,700,500,600')    
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
     script(src='/socket.io/socket.io.js')
     script
@@ -70,11 +72,13 @@ html
       });
 
   body!= body
-
+    h1.logo G.O. CHAT
+    div.stalk
     section#login
       form#set-nickname
+        label nickname:
         input#nickname(type='text')
-        input(type='submit')
+        input#thats-me(type='submit')(value='thats me!')
     section#wrapper
       section#left-column 
         section#chat-box 

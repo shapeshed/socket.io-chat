@@ -148,8 +148,9 @@ select {
   vertical-align: middle;
 }
 html {
-  font-size: 62.5%;
-  font-family: Helvetica;
+  font-family: 'Terminal Dosis', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 html,
 body {
@@ -163,8 +164,61 @@ ul {
   font-size: 1.6em;
   line-height: 1.8em;
 }
+.logo {
+  float: left;
+  font-size: 2.25em;
+  font-family: 'Terminal Dosis', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin: 1em 0.5em 1em 1em;
+  padding: 0.35em 0.4em;
+  background-color: #eb0080;
+  border: none;
+  border-radius: 10px;
+}
+.stalk {
+  background-image: url("../images/stalk.png");
+  position: absolute;
+  height: 25px;
+  width: 20px;
+  top: 5.7em;
+  left: 3em;
+}
 section#login {
   float: left;
+}
+label {
+  position: relative;
+  top: 0.15em;
+  display: inline;
+  margin-right: 0.2em;
+  font-size: 2em;
+  color: #ddd;
+}
+input#nickname {
+  color: #fff;
+  font-size: 2.25em;
+  font-family: 'Terminal Dosis', sans-serif;
+  font-weight: 400;
+  margin: 1em 0;
+  width: 6em;
+  padding: 0.2em 0.4em;
+  background-color: #eb0080;
+  border: none;
+  border-radius: 10px;
+}
+input#thats-me {
+  font-size: 2.25em;
+  font-family: 'Terminal Dosis', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin: 1em 0.5em;
+  padding: 0.2em 0.4em;
+  background-color: #eb0080;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.2em 0.2em 0 #eb0080;
+  cursor: pointer;
 }
 section#wrapper {
   display: none;
@@ -204,5 +258,5 @@ section#wrapper section#right-column {
   float: left;
   width: 16%;
   height: 96%;
-  background: #ccc;
+  background: #ddd;
 }
